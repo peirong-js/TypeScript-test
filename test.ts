@@ -72,4 +72,24 @@ function getLength2(input: string | number): number {
     }
 }
 
+// 枚举
+enum Direction {
+    Up,
+    Down,
+    Left,
+    Right
+}
+console.log(Direction.Up)  // 0
+console.log(Direction[0])  // Up
+
+const enum Direction2 {   // 常量枚举
+    Up = 'Up',
+    Down = 'Down',
+    Left = 'Left',
+    Right = 'Right'
+}
+const value = 'Up'
+if(value === Direction2.Up) {
+    console.log('go')
+}
 export {}
